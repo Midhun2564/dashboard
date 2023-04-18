@@ -1,0 +1,35 @@
+.transactions{
+    overflow: auto;
+}
+.transaction-wrapper{
+    height: 185px;
+    overflow: auto;
+    display: flex;
+}.transaction{
+    display: inline;
+    align-items: center;
+    width: fit-content;
+    padding: 5px 20px;
+    margin: auto;
+    border-radius: 10px;
+    border-color: black;
+    background-color: rgb(225, 218, 110);
+    border-bottom: 1px solid #f0f0f0;
+}
+.title{
+    padding: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: #333333;
+    font-size: 18px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica,
+      sans-serif;
+}
+.price{
+    font-size: 18px;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica,
+      sans-serif;
+}
+.location{
+    color: red;
+}

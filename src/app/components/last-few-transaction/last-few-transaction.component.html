@@ -1,0 +1,20 @@
+<div class="transactions">
+    <div class="title">Last Few Transactions</div>
+    <div class="transaction-wrapper">
+        <div class="transaction" *ngFor="let trans of transactions">
+            <div class="image">
+                <img src="trans.imgSrc" alt="" style="width:100px ;">
+            </div>
+            <div class="title">{{trans.title}}</div>
+            <div class="price">{{trans.price}}</div>
+            <div class="shop-location">
+                <div class="shop">{{trans.shop}}</div>
+                <div class="location">{{trans.location}}</div>
+            </div>
+           
+            <div class="status" [ngStyle]="{'color': trans.status === 'pending' ? 'red': 'green'}">{{trans.status}}</div>
+
+
+        </div>
+    </div>
+</div>
